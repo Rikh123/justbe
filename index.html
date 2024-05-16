@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Crush</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+        #main {
+            background-color: rgb(248, 248, 248);
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-rows: 100%;
+        }
+        #first-part {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .video-container {
+            position: relative;
+            width: 55%;
+            height: 90%;
+            border-radius: 90px;
+            overflow: hidden;
+        }
+        .center-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .center-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 4vw;
+            font-weight: 600;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .play-button {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            font-size: 1.5em;
+            cursor: pointer;
+            background-color: aqua;
+            color: rgb(30, 95, 30);
+            border: none;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="first-part">
+            <div class="video-container">
+                <video id="vid" class="center-image" src="crush.mp4"></video>
+                <div class="center-text">
+                    <h1>Our crush</h1>
+                </div>
+                <button class="play-button" onclick="playMedia()">Play</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function playMedia() {
+            var video = document.getElementById("vid");
+            video.play();
+        }
+    </script>
+</body>
+</html>
