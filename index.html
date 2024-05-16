@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crush</title>
+  <title>Simple Animated Landing Page By Codewithshobhit</title>
   <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
     rel="stylesheet"
@@ -38,15 +38,41 @@
       padding: 20px 40px;
     }
 
-  
+    .top-left,
+    .top-first-rite,
+    .top-sec-right {
+      width: fit-content;
+      height: fit-content;
+      border: 2px solid black;
+      border-radius: 100px;
+      padding: 5px 15px;
+    }
 
-  
+    #first-part h2 {
+      font-weight: 400;
+      font-size: 1.6vh;
+    }
 
     .top-center {
       text-transform: uppercase;
     }
 
+    .top-right {
+      font-size: 1.6vh;
+      display: flex;
+      gap: 3px;
+    }
 
+    #second-part {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #second-part h1 {
+      font-size: 19vw;
+      font-weight: 600;
+    }
 
     .center-image {
       position: absolute;
@@ -98,7 +124,7 @@
   <div id="main">
     <div id="first-part">
       <div class="top-left">
-        
+        <h2>Menu</h2>
       </div>
       <div class="top-center">
         <div class="text">
@@ -107,16 +133,16 @@
       </div>
       <div class="top-right">
         <div class="top-first-rite">
-         
+          <h2>Login</h2>
         </div>
         <div class="top-sec-right">
-          
+          <h2>Sign-up</h2>
         </div>
       </div>
     </div>
     <div id="second-part">
       <h1 class="center-text">Our Crush</h1>
-      <video controls id="img6" class="center-image" poster="placeholder.jpg">
+      <video autoplay id="img6" class="center-image" poster="placeholder.jpg">
         <source src="lisa.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
