@@ -1,88 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Crush</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        html, body {
-            width: 100%;
-            height: 100%;
-        }
-        #main {
-            background-color: rgb(248, 248, 248);
-            width: 100%;
-            height: 100%;
-            display: grid;
-            grid-template-rows: 100%;
-        }
-        #first-part {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-        .video-container {
-            position: relative;
-            width: 55%;
-            height: 90%;
-            border-radius: 90px;
-            overflow: hidden;
-        }
-        .center-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .center-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 4vw;
-            font-weight: 600;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        .play-button {
-            position: absolute;
-            bottom: 10%;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 10px 20px;
-            font-size: 1.5em;
-            cursor: pointer;
-            background-color: aqua;
-            color: rgb(30, 95, 30);
-            border: none;
-            border-radius: 100px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Animated Landing Page By Codewithshobhit</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+  <link rel="stylesheet" href="style.css">
 </head>
+<div id="main">
+  <!-- <video controls autoplay muted loop src="Nancy _ Momoland _  2 Phut Hon KAIZ Remix  _ ROCKSTAR LIFESTYLE PRODUCTION.mp4"></video> -->
+<div id="first-part">
+
+   
+  <div class="top-left">
+    <h2>Menu</h2>
+  </div>
+
+  <div class="top-center">
+    <div class="text"><h2 id="center-text"></h2></div>
+  </div>
+
+ <div class="top-right">
+
+   <div class="top-first-rite">
+    <h2>Login</h2>
+   </div>
+
+   <div class="top-sec-right">
+      <h2>Sign-up</h2>
+   </div>
+
+ </div>
+</div>
+
+
+<div id="second-part">
+  <h1 class="center-text">Our Crush</h1>
+    <img id="img1" class="center-image" src="https://th.bing.com/th/id/OIP.iojPNo2l8yE9U1QPKE7DlwHaJk?rs=1&pid=ImgDetMain" alt="">
+    <img id="img2" class="center-image" src="https://th.bing.com/th/id/OIP.5coh6KEE9dW0O_ZnxMbxIAHaH0?w=692&h=731&rs=1&pid=ImgDetMain" alt="">
+    <img id="img3" class="center-image" src="https://www.pngarts.com/files/9/Lisa-Blackpink-PNG-Image-Transparent.png" alt="">
+    <img id="img4" class="center-image" src="https://i.pinimg.com/originals/22/ed/b8/22edb846452e0122b335c51d1189d2e0.jpg" alt="">
+    <img id="img5" class="center-image" src="https://th.bing.com/th/id/OIP.4D1466g8mYX_bKubQTw2fwAAAA?w=474&h=592&rs=1&pid=ImgDetMain" alt="">
+    <video autoplay="autoplay" loop muted id="img6" class="center-image"
+    src="lisa.mp4"></video>
+  </div>
+  <div class="last-text">
+   <center> <p id="last-text"></p></center>
+  </div>
+</div>
+</div>
+</div>
+
 <body>
-    <div id="main">
-        <div id="first-part">
-            <div class="video-container">
-                <video id="vid" class="center-image" src="crush.mp4"></video>
-                <div class="center-text">
-                    <h1>Our crush</h1>
-                </div>
-                <button class="play-button" onclick="playMedia()">Play</button>
-            </div>
-        </div>
-    </div>
-    <script>
-        function playMedia() {
-            var video = document.getElementById("vid");
-            video.play();
-        }
-    </script>
+  <audio autoplay loop>
+    <source src="lisa.mp3" type="mp3">
+    <source src="lisa.mp3" type="mp3">
+    <source src="lisa.mp3" type="mp3">
+
+
+    Your browser does not support the audio element.
+  </audio>
+
 </body>
+
 </html>
+  
